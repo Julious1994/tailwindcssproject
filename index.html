@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app-header p-8">
+      <span class="font-bold text-4xl">Go Chat</span>
+    </div>
+    <div class="text-center text-4xl p-4">Welcome to GoChat!</div>
+    <div class="flex flex-row">
+      <div class="flex-1 border ml-8 mr-8 border-gray-600">
+        <div class="text-center text-xl p-4">Please login !</div>
+        <div class="flex flex-col justify-center p-8 py-4">
+          <input
+            class="mb-4 border p-1 border-gray-600"
+            name="loginUsername"
+            placeholder="enter your username"
+          />
+          <input
+            class="mb-4 border p-1 border-gray-600"
+            name="loginPassword"
+            placeholder="enter your password"
+            type="password"
+          />
+          <button
+            class="m-1 border rounded border-gray-600 w-20 p-1 self-center"
+            type="button"
+            onclick="onLogin()"
+          >
+            Submit
+          </button>
+          <div id="wrongLogin" class="wrong-login">
+            Username/Password does not match.
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 border ml-8 mr-8 border-gray-600">
+        <div class="text-center text-xl p-4">Please register !</div>
+        <div class="flex flex-col justify-center p-8 py-4">
+          <input
+            class="mb-4 border p-1 border-gray-600"
+            name="username"
+            placeholder="Username"
+          />
+          <input
+            class="mb-4 border p-1 border-gray-600"
+            name="nickname"
+            placeholder="Nickname"
+          />
+          <input
+            class="mb-4 border p-1 border-gray-600"
+            name="password"
+            placeholder="Password"
+            type="password"
+          />
+          <input
+            class="mb-4 border p-1 border-gray-600"
+            name="confirmPassword"
+            placeholder="Verify password"
+            type="password"
+          />
+          <button
+            class="m-1 border rounded border-gray-600 w-20 p-1 self-center"
+            type="button"
+            onclick="onRegister()"
+          >
+            Submit
+          </button>
+          <div id="successRegister" class="success-message"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./goChat.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body onload="chatLoad()">
+    <div class="app-header p-8">
+      <span class="font-bold text-4xl">Go Chat</span>
+    </div>
+    <div class="mt-4">
+      <div class="border border-gray-600 chat-list-view">
+        <div class="chat-list-header text-center text-4xl p-4" id="user"></div>
+
+        <div
+          class="flex flex-col border-b chat-list-item"
+          onclick="showChat('Tim')"
+        >
+          <span class="bg-gray-100 p-2 border m-4 rounded">
+            <span>hello how are you?</span>
+          </span>
+          <span class="bg-gray-100 p-2 border m-4 rounded">
+            <span>Good morning</span>
+          </span>
+        </div>
+        <div class="flex">
+          <input
+            placeholder="Type message here"
+            type="text"
+            class="flex-1 p-2"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./goChat.js"></script>
+  </body>
+</html>

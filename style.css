@@ -1,0 +1,18 @@
+.app-header {
+  background-color: #37dfb6;
+}
+.success-message,
+.wrong-login {
+  display: none;
+  color: red;
+}
+.chat-list-view {
+  width: 75%;
+  margin: 0px auto;
+}
+.chat-list-header {
+  background-color: #37dfb6;
+}
+.chat-list-item {
+  cursor: pointer;
+}
